@@ -1,6 +1,6 @@
 include(FindPkgConfig)
 include(FindGStreamer)
-include(FindOpenAL)
+#include(FindOpenAL)
 
 # ===================== Source Files =====================
 set(OF_SOURCE_FILES
@@ -123,12 +123,12 @@ set(PLATFORM_SHARED_LIBRARIES ${LIB_FMODEX})
 set(PLATFORM_LIBRARIES z gstapp-1.0 gstvideo-1.0 gstbase-1.0 gstreamer-1.0 udev fontconfig freetype sndfile openal ssl crypto pulse-simple pulse asound GLEW GLU GL pangocairo-1.0 gdk_pixbuf-2.0 cairo-gobject pango-1.0 cairo gtk-3 gdk-3 atk-1.0 gio-2.0 gobject-2.0 glib-2.0 mpg123 glut X11 Xrandr Xxf86vm dl Xinerama Xcursor Xi dl pthread freeimage boost_filesystem boost_system)
 set(OF_CORE_LIBS ${PLATFORM_STATIC_LIBS} ${PLATFORM_LIBRARIES} ${PLATFORM_SHARED_LIBRARIES})
 
-PKG_SEARCH_MODULE(ALSA "REQUIRED" alsa)
+#PKG_SEARCH_MODULE(ALSA "REQUIRED" alsa)
 PKG_SEARCH_MODULE(CAIRO "REQUIRED" cairo)
 
 include_directories(${CAIRO_INCLUDE_DIRS})
 include_directories(${OPENAL_INCLUDE_DIRS})
-include_directories(${ALSA_INCLUDE_DIRS})
+#include_directories(${ALSA_INCLUDE_DIRS})
 include_directories(${GSTREAMER_APP_INCLUDE_DIRS})
 include_directories(${GSTREAMER_BASE_INCLUDE_DIRS})
 include_directories(${GSTREAMER_VIDEO_INCLUDE_DIRS})

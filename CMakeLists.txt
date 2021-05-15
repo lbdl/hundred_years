@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.3)
-project(openFrameworks-clion)
-set(APP_NAME openFrameworks-clion)
+project(hundreds_v_1)
+set(APP_NAME hundreds_v_1)
 
 # ===================== oF Directory =====================
-set(OF_DIRECTORY ~/of)
+set(OF_DIRECTORY /Users/tims/DATA/C++/hundredyears/of/openFrameworks)
 
 
 # ===================== Compiler Flags =====================

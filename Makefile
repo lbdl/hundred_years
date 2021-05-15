@@ -7,7 +7,7 @@ endif
 # make sure the the OF_ROOT location is defined
 ifndef OF_ROOT
 	# CHANGE THIS to your openFrameworks root path (don't use ~ abbreviation, it won't work)
-	OF_ROOT=/home/sherwyn/of
+	OF_ROOT=/Users/tims/DATA/C++/hundredyears/of/openFrameworks
 endif
 
 # call the project makefile!
