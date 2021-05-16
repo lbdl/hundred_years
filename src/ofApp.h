@@ -42,4 +42,9 @@ public:
     ofMaterial material;
     ofIcoSpherePrimitive icoSphere;
     vector<ofMeshFace> triangles;
+    int mode;
+    bool bHelpText;
+    bool bSplitFaces;
+    bool bMousePressed;
+//    ofSpherePrimitive sphere;
 };
