@@ -1,7 +1,17 @@
 #include "ofApp.h"
 
+#include "ofxAssimpModelLoader.h"
 //--------------------------------------------------------------
 void ofApp::setup() {
+
+    // MODEL LOADING
+    ofxAssimpModelLoader loader;
+    ofMesh mesh;
+    ofTexture tex;
+
+    loader.loadModel("assets/BROARD_LEAF_SUCCULENT_dae/BROARD_LEAF_SUCCULENT_5K.dae");
+    mesh = loader.getMesh(0);
+    tex = loader.getTextureForMesh(0);
 
     ofSetVerticalSync(true);
     ofBackground(20);
